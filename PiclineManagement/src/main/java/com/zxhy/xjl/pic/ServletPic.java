@@ -61,13 +61,13 @@ public class ServletPic extends HttpServlet {
 			sucflag="二维码加密成功！";
 			qrps.getQRPic("ZTEsoft", logoAddress, "d:/pic/newlogo.jpg", false, picAddress, 10, 10, 1.0f,n);
 			session.setAttribute("sucflag", sucflag);
-			response.sendRedirect("examples/demo.jsp");
+			response.sendRedirect("examples/picmanager.jsp");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			sucflag="加密失败，请检查输入文件！";
 			e.printStackTrace();
 			session.setAttribute("sucflag", sucflag);
-			response.sendRedirect("examples/demo.jsp");
+			response.sendRedirect("examples/picmanager.jsp");
 
 		}
 		}
@@ -81,20 +81,20 @@ public class ServletPic extends HttpServlet {
 			if(enflag)
 			{   trflag="是真实图片，没有篡改!";
 				session.setAttribute("sucflag", trflag);
-				response.sendRedirect("examples/demo.jsp#tabs1-js");
+				response.sendRedirect("examples/picmanager.jsp#tabs1-js");
 				
 			}
 			else
 			{
 				trflag="图片被篡改，请注意信息安全！";
 				session.setAttribute("sucflag", trflag);
-				response.sendRedirect("examples/demo.jsp#tabs1-js");
+				response.sendRedirect("examples/picmanager.jsp#tabs1-js");
 			}
 		} 
 		else 
 		{   trflag="输入了非法信息，请检查！";
 			session.setAttribute("sucflag", trflag);
-			response.sendRedirect("examples/demo.jsp");
+			response.sendRedirect("examples/picmanager.jsp");
 		}
 	}
 
