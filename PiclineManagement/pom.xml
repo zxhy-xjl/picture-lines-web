@@ -4,7 +4,7 @@
 
 
 	<groupId>com.zxhy.xjl</groupId>
-	<artifactId>xjl-picture-lines</artifactId>
+	<artifactId>xjl-picture-lines-web</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1</version>
 	<name>PiclineManagement Maven Webapp</name>
