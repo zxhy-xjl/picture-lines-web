@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 
-	<groupId>com.test.pic.line</groupId>
-	<artifactId>PiclineManagement</artifactId>
+	<groupId>com.zxhy.xjl</groupId>
+	<artifactId>xjl-picture-lines</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1</version>
 	<name>PiclineManagement Maven Webapp</name>
